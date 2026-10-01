@@ -198,20 +198,19 @@ Dashboard
 
 This screenshot shows the dashboard containing Total Habits, Completed Days, Current Streak, and Weekly Progress Overview.
 
-Screenshot: dashboard.png
+![Dashboard](output/dashboard.png)
 
 Add New Habit
 
 This screenshot shows the Add New Habit section where users can enter the habit name, description, and category.
 
-Screenshot: add-habit.png
+![Add New Habit](output/add-habit.png)
 
 My Habits
 
 This screenshot shows the created habits along with weekly tracking, streak information, history, edit, and delete options.
 
-Screenshot: my-habits.png
-
+![My Habits](output/my-habits.png)
 Project Structure
 
 Habit-tracker
@@ -225,7 +224,7 @@ Habit-tracker
  • server.js
  • db.js
 
-• Screenshots
+• output
  • dashboard.png
  • add-habit.png
  • my-habits.png
