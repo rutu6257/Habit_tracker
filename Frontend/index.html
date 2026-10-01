@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Habit Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="app-header">
+
+            <div class="header-icon">
+                ✓
+            </div>
+
+            <div>
+                <h1>Habit Tracker</h1>
+
+                <p class="subtitle">
+                    Build good habits and track your progress
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <div class="progress-dashboard">
+
+            <div class="progress-box">
+                <div class="stat-icon">📋</div>
+
+                <h3 id="totalHabits">0</h3>
+
+                <p>Total Habits</p>
+            </div>
+
+
+            <div class="progress-box">
+                <div class="stat-icon">✅</div>
+
+                <h3 id="completedDays">0</h3>
+
+                <p>Completed Days</p>
+            </div>
+
+
+            <div class="progress-box">
+                <div class="stat-icon">🔥</div>
+
+                <h3 id="currentStreak">0</h3>
+
+                <p>Current Streak</p>
+            </div>
+        </div>
+       
+
+        <!-- ================= PROGRESS OVERVIEW ================= -->
+
+        <div class="card progress-overview">
+
+            <h2>Progress Overview</h2>
+
+            <p class="section-subtitle">
+                See how consistently you are completing your habits this week.
+            </p>
+
+            <div id="progressOverview">
+
+                <p>Loading progress...</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ADD HABIT ================= -->
+
+        <div class="card">
+
+            <h2>Add New Habit</h2>
+
+            <form id="habitForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="habitName">
+                            Habit Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="habitName"
+                            placeholder="Example: Reading"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category">
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="Study">
+                                Study
+                            </option>
+
+                            <option value="Health">
+                                Health
+                            </option>
+
+                            <option value="Fitness">
+                                Fitness
+                            </option>
+
+                            <option value="Personal">
+                                Personal
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <input
+                        type="text"
+                        id="description"
+                        placeholder="Example: Read for 30 minutes"
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Add Habit
+                </button>
+
+            </form>
+
+
+            <p id="message"></p>
+
+        </div>
+
+
+        <!-- ================= MY HABITS ================= -->
+
+        <div class="card">
+
+            <h2>My Habits</h2>
+
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchHabit"
+                    placeholder="🔍 Search your habits..."
+                >
+
+            </div>
+
+
+            <!-- Category Filter -->
+
+            <div class="filter-box">
+
+                <select id="categoryFilter">
+
+                    <option value="">
+                        All Categories
+                    </option>
+
+                    <option value="Study">
+                        Study
+                    </option>
+
+                    <option value="Health">
+                        Health
+                    </option>
+
+                    <option value="Fitness">
+                        Fitness
+                    </option>
+
+                    <option value="Personal">
+                        Personal
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Habit List -->
+
+            <div id="habitList">
+
+                <p>No habits added yet.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

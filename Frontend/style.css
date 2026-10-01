@@ -1,0 +1,806 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f8fc;
+
+    color: #3f4054;
+
+    padding: 35px 20px;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.container {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.app-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-bottom: 32px;
+}
+
+
+.header-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #aaa8d2,
+        #c4d9ce
+    );
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 12px rgba(100, 100, 140, 0.12);
+}
+
+
+.app-header h1 {
+    text-align: left;
+
+    margin-bottom: 4px;
+
+    font-size: 34px;
+
+    color: #4b4a72;
+}
+
+
+.subtitle {
+    text-align: left;
+
+    margin-bottom: 0;
+
+    color: #85859a;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   COMMON CARD
+===================================================== */
+
+.card {
+    background: #ffffff;
+
+    padding: 28px;
+
+    margin-bottom: 24px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e8e8f0;
+
+    box-shadow:
+        0 4px 15px rgba(80, 80, 120, 0.05);
+}
+
+
+.card h2 {
+    font-size: 21px;
+
+    color: #4b4a72;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.progress-dashboard {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+}
+
+
+.progress-box {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f5f4fc
+    );
+
+    padding: 23px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    border: 1px solid #e7e6f3;
+
+    box-shadow:
+        0 4px 15px rgba(80, 80, 120, 0.05);
+
+    transition: transform 0.2s ease;
+}
+
+
+.progress-box:hover {
+    transform: translateY(-2px);
+}
+
+
+.stat-icon {
+    font-size: 22px;
+
+    margin-bottom: 7px;
+}
+
+
+.progress-box h3 {
+    font-size: 30px;
+
+    color: #65638c;
+
+    margin-bottom: 5px;
+}
+
+
+.progress-box p {
+    color: #8a8a9d;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.form-group {
+    width: 100%;
+}
+
+
+label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #55546f;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #ddddE8;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #44445a;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #aaa8d2;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(170, 168, 210, 0.12);
+}
+
+
+/* =====================================================
+   MAIN BUTTON
+===================================================== */
+
+form button {
+    width: 100%;
+
+    padding: 12px 16px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    background: linear-gradient(
+        135deg,
+        #aaa8d2,
+        #9694c2
+    );
+
+    color: white;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+form button:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px
+        rgba(120, 118, 165, 0.18);
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+#message {
+    margin-top: 14px;
+
+    text-align: center;
+
+    color: #719786;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   HABIT CARD
+===================================================== */
+
+.habit-item {
+    background: #ffffff;
+
+    padding: 22px;
+
+    border: 1px solid #e8e8f0;
+
+    border-radius: 12px;
+
+    margin-bottom: 14px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(80, 80, 120, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.habit-item:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 16px
+        rgba(80, 80, 120, 0.07);
+}
+
+
+.habit-item h3 {
+    font-size: 19px;
+
+    color: #555477;
+
+    margin-bottom: 7px;
+}
+
+
+.habit-item > p {
+    color: #85859a;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.habit-item h4 {
+    font-size: 15px;
+
+    color: #5d5c76;
+
+    margin-top: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   CATEGORY BADGE
+===================================================== */
+
+.category-badge {
+    display: inline-block;
+
+    margin-top: 4px;
+
+    padding: 5px 10px;
+
+    background: #f0effa;
+
+    color: #68668f;
+
+    border: 1px solid #dedcef;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   WEEKLY DAYS
+===================================================== */
+
+.week-days {
+    display: flex;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+}
+
+
+.week-days button {
+    width: auto;
+
+    margin-top: 0;
+
+    padding: 8px 12px;
+
+    background: #f4f3fa;
+
+    color: #66658b;
+
+    border: 1px solid #dddded;
+
+    border-radius: 7px;
+
+    box-shadow: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.week-days button:hover {
+    background: #e9e8f7;
+
+    transform: translateY(-1px);
+}
+
+
+/* Completed Day */
+
+.week-days button.completed {
+    background: #b9dcca;
+
+    border-color: #b9dcca;
+
+    color: #355b48;
+}
+
+
+/* =====================================================
+   STREAK
+===================================================== */
+
+.streak {
+    display: inline-block;
+
+    margin-top: 14px;
+
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    background: #fff4df;
+
+    color: #9a7441 !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border: 1px solid #f2dfbd;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-box {
+    margin-bottom: 12px;
+}
+
+
+.filter-box {
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   HABIT ACTIONS
+===================================================== */
+
+.habit-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+
+.habit-actions button {
+    width: auto;
+
+    margin-top: 0;
+
+    padding: 9px 15px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HISTORY BUTTON
+===================================================== */
+
+.history-button {
+    background: #ffffff;
+
+    color: #77769a;
+
+    border: 1px solid #dcdceb;
+
+    box-shadow: none;
+}
+
+
+.history-button:hover {
+    background: #f4f3fb;
+}
+
+
+/* =====================================================
+   EDIT BUTTON
+===================================================== */
+
+.edit-button {
+    background: #aaa8d2;
+
+    color: white;
+
+    border: 1px solid #aaa8d2;
+}
+
+
+.edit-button:hover {
+    background: #9694c2;
+}
+
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.delete-button {
+    background: #ffffff;
+
+    color: #b47777;
+
+    border: 1px solid #eccfcf;
+}
+
+
+.delete-button:hover {
+    background: #fff5f5;
+}
+
+
+/* =====================================================
+   HISTORY
+===================================================== */
+
+.history {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    background: #fafafe;
+
+    border: 1px solid #e8e8f0;
+}
+
+
+.history h4 {
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+
+.history ul {
+    padding-left: 20px;
+}
+
+
+.history li {
+    margin-bottom: 6px;
+
+    color: #85859a;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   PROGRESS OVERVIEW
+===================================================== */
+
+.progress-overview {
+    margin-top: 24px;
+}
+
+
+.section-subtitle {
+    color: #85859a;
+
+    font-size: 14px;
+
+    margin-bottom: 22px;
+}
+
+
+.progress-item {
+    margin-bottom: 22px;
+}
+
+
+.progress-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.progress-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+
+.progress-header strong {
+    color: #5d5c76;
+
+    font-size: 15px;
+}
+
+
+.progress-header span {
+    color: #85859a;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   PROGRESS BAR
+===================================================== */
+
+.progress-bar {
+    width: 100%;
+
+    height: 9px;
+
+    background: #eeeeF5;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progress-fill {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #aaa8d2,
+        #b9dcca
+    );
+
+    border-radius: 10px;
+
+    transition:
+        width 0.5s ease;
+}
+
+
+.progress-percentage {
+    margin-top: 6px;
+
+    color: #85859a;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+
+    .app-header {
+        justify-content: flex-start;
+    }
+
+
+    .app-header h1 {
+        font-size: 28px;
+    }
+
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+
+    .progress-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .progress-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 4px;
+    }
+
+
+    .habit-actions {
+        flex-direction: column;
+    }
+
+
+    .habit-actions button {
+        width: 100%;
+    }
+
+
+    .week-days button {
+        flex: 1;
+
+        min-width: 65px;
+    }
+}
