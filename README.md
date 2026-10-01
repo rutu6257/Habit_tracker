@@ -210,7 +210,7 @@ My Habits
 
 This screenshot shows the created habits along with weekly tracking, streak information, history, edit, and delete options.
 
-![My Habits](output/my-habits.png)
+![My Habit](output/my-habit.png)
 Project Structure
 
 Habit-tracker
